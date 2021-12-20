@@ -8,20 +8,20 @@ function PraticaTeste(){
 
 
     if(n1 === n2){
-         igualdade = n1,'e',n2,' São iguais';
+         igualdade = ' São iguais';
     } else { 
-        igualdade = n1,'e',n2,' Não são iguais';
+        igualdade = ' Não são iguais';
 
     }
     if (soma > 10 && soma < 20){
         somaResp = 'que é maior que 10 e menor que 20.';
-    } else if (soma < 10){
-        somaResp =  'que é menor que 10 e menor que 20.';
-    }else if (soma > 20)  {
-        somaResp =  'que é maior que 10 e maior que 20.';
+    } else if (soma <= 10){
+        somaResp =  'que é menor ou igual a 10 e menor que 20.';
+    }else if (soma >= 20)  {
+        somaResp =  'que é maior que 10 e maior ou igual a 20.';
     }
     
-console.log(`Entradas: ${n1} e ${n2}\nSua soma é ${soma} ${somaResp} `);
+console.log(`Entradas: ${n1} e ${n2}\nOs números ${n1} e ${n2} ${igualdade} Sua soma é ${soma} ${somaResp} `);
 }
 
 
